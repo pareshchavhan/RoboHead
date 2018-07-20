@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+   <parameter name="browser" value="Chrome" />
+
+<!--  
+   <test name="All">
+		<parameter name="module" value="All" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testAll"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+-->
+
+  <!--   <test name="Login">
+		<parameter name="module" value="LOGIN" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testLogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  --> 
+	 
+  <test name="Project">
+		<parameter name="module" value="PROJECT" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testProject"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  
+ 
+</suite> 

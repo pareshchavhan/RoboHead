@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+   <parameter name="browser" value="Chrome" />
+   
+   <listeners>
+   	<listener class-name = "com.aquent.rambo.autotest.util.AnnaotationTransformer"/>
+   </listeners>
+
+<!--  
+   <test name="All">
+		<parameter name="module" value="All" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testAll"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+-->
+
+  <!--   <test name="Login">
+		<parameter name="module" value="LOGIN" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testLogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  --> 
+	 
+  <test name="CreateProject">
+		<parameter name="module" value="PROJECT" />
+		<classes>
+			<class name="com.aquent.rambo.autotest.test.Tester">
+				<methods>
+					<include name="testCreateProject"></include> 
+					<include name="testCalenderView"></include>  
+					<include name="testModifyProject"></include> 
+					<include name="testCopyProject"></include>  -->
+					<include name="testCopyProjectWithRadioButtons"></include>
+					<include name="testCopyProjectResorcesRadioButtonAndSaveAsDraft"></include>
+					<include name="testCopyProjectTemplate"></include> 
+					<include name="testAddToCampaignArchiveAndFavorite"></include>
+					<include name="testAddNote"></include>
+					<include name="testManageNote"></include>
+					<include name="testTaskFunctionality"></include>
+					<include name="testRevieFunctionality"></include>
+					<include name="testFilterByFunctionality"></include>    
+					<include name ="testReviewTabFunctionality"></include>  
+				</methods>
+			</class>
+		</classes>
+	</test>  
+ 
+</suite> 
